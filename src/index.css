@@ -1,0 +1,48 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --background-color: #000000; 
+  --background-secondary: #111111;
+  --text-color: #E5E7EB; 
+  --text-secondary: #9CA3AF; 
+  --text-overlay: #2c2d2f; 
+  --primary-color: #6366F1; 
+  --border-color: #374151; 
+  --tag-bg-color: rgba(99, 102, 241, 0.2);
+  --tag-text-color: #c7d2fe; 
+}
+
+.light-theme {
+  --background-color: #FFFFFF; 
+  --background-secondary: #F3F4F6; 
+  --text-color: #111827; 
+  --text-secondary: #6B7280; 
+  --text-overlay: #232427; 
+  --primary-color: #4F46E5; 
+  --border-color: #E5E7EB; 
+   --tag-bg-color: #e0e7ff;
+  --tag-text-color: #4338ca; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Use our new CSS variables */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}

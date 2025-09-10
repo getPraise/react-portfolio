@@ -1,0 +1,120 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+  padding: 6rem 0 2rem 0;
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 8rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* --- Main Two-Column Layout --- */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* --- Left Column --- */
+.footerLeft {
+  max-width: 500px;
+}
+
+.footerHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+}
+
+.footerText {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emailLink {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.emailLink:hover {
+  color: var(--primary-color);
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  transition: color 0.3s ease;
+}
+.copyButton:hover {
+  color: var(--primary-color);
+}
+
+
+/* --- Right Column --- */
+.footerRight {
+  flex-shrink: 0; /* Prevents this column from shrinking */
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.socialLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.socialLink:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* --- Divider and Copyright --- */
+.footerRule {
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-align: center;
+  margin: 0;
+}
+
+/* --- Responsive Styles for Mobile --- */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

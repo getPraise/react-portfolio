@@ -1,0 +1,52 @@
+/* src/pages/BlogPage.module.css */
+.blogPage {
+  padding: 8rem 0 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.postTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.excerpt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.readMoreLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}

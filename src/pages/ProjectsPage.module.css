@@ -1,0 +1,57 @@
+/* src/pages/ProjectsPage.module.css */
+.projectsPage {
+  padding: 8rem 0 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* CHANGED: Reduced bottom margin as the subtitle will add space */
+  margin-bottom: 1rem; 
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* --- NEW: Style for the subtitle --- */
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 3rem; /* Creates space between subtitle and filter bar */
+}
+
+.filterBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem; /* Creates more space between filters and projects */
+}
+
+/* --- IMPROVED BUTTON STYLES --- */
+.filterButton {
+  background-color: var(--background-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem; /* Increased padding for a better feel */
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem; /* Slightly larger font */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: all 0.2s ease-in-out; /* Smooth transition for all properties */
+}
+
+.filterButton:hover {
+  transform: translateY(-2px); /* Lifts the button on hover */
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filterButton.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 10px rgba(var(--primary-color-rgb, 99, 102, 241), 0.3); /* Adds a glow effect */
+}

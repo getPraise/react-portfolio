@@ -1,0 +1,25 @@
+/* src/pages/DashboardPage.module.css */
+.dashboard {
+  padding: 8rem 0 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

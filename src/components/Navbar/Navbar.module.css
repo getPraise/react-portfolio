@@ -1,0 +1,146 @@
+/* src/components/Navbar/Navbar.module.css */
+.navbar {
+  background-color: var(--background-secondary);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* Gives the navbar a consistent height */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.desktopNavLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themeToggle {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.themeToggle:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* --- HAMBURGER MENU STYLES --- */
+.menuButton {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002; /* Above the mobile menu overlay */
+  padding: 0;
+  width: 24px;
+  height: 18px;
+}
+
+.hamburgerLine {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerLine:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.line1Open { transform: translateY(7px) rotate(45deg); }
+.line2Open { opacity: 0; }
+.line3Open { transform: translateY(-7px) rotate(-45deg); }
+
+/* --- MOBILE MENU OVERLAY --- */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+.mobileNavLink {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin: 1.5rem 0;
+}
+
+/* --- RESPONSIVE MEDIA QUERY --- */
+@media (max-width: 768px) {
+  .desktopNavLinks {
+    display: none;
+  }
+  .menuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

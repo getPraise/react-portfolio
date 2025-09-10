@@ -1,0 +1,29 @@
+/* src/components/BackToTop/BackToTop.module.css */
+.backToTopButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 500;
+  
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.backToTopButton.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

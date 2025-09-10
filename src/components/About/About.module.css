@@ -1,0 +1,137 @@
+/* src/components/About/About.module.css */
+.aboutSection {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.journeySection {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.journeyText {
+  flex: 1;
+  text-align: left;
+}
+
+.journeyText h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.journeyText p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.highlightText {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.journeyImage {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  filter: brightness(0.85);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.chartContainer {
+  height: 400px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.certificatesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.certificateCard {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  background-color: var(--background-secondary);
+  text-decoration: none;
+}
+
+.certificateCard:hover {
+  transform: scale(1.025);
+  border-color: var(--primary-color);
+}
+
+.certificateImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.certificateInfo {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.certTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.certId {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-family: monospace;
+}
+
+/* --- FINAL, CORRECTED RESPONSIVE STYLES --- */
+@media (max-width: 768px) {
+  .title {
+    text-align: center; /* Center the main "About Me" title */
+  }
+
+  .journeySection {
+    flex-direction: column; /* Stacks the text and image */
+    gap: 2rem;
+  }
+
+  .journeyText {
+    text-align: left; /* Keep the paragraph text left-aligned for readability */
+  }
+
+  .sectionTitle {
+    text-align: center; /* Center the subheadings */
+  }
+  .chartContainer {
+  height: 300px; /* Reduces height from 400px to 300px on mobile */
+}
+}

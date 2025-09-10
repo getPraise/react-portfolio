@@ -1,0 +1,189 @@
+/* src/pages/SinglePostPage.module.css */
+
+/* --- Main Page Layout --- */
+.singlePostPage {
+  padding: 8rem 0 4rem 0;
+}
+
+.backLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* --- Typography --- */
+.postDate {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+    
+.postTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.postHeading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 2.5rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.textBlock p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+}
+
+.postList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.postList li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  padding-left: 25px;
+  position: relative;
+}
+
+.postList li::before {
+  content: '✓';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* --- Link Buttons --- */
+.linkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* --- Desktop Two-Column Layout --- */
+.postLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.postContent {
+  max-width: 800px;
+}
+
+/* --- MEDIA STYLES (RIGHT COLUMN) - CORRECTED & UNIFIED --- */
+.postMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 120px;
+}
+
+/* This is the base style for videos, which are not clickable */
+.postMediaItem {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  height: 250px;
+  object-fit: contain;
+  background-color: var(--background-color);
+}
+
+/* This is the style for single, clickable images */
+.postMediaItemClickable {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  height: 250px;
+  object-fit: contain;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.postMediaItemClickable:hover {
+  opacity: 0.8;
+}
+    
+.postImageGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* This is the style for the images inside the gallery grid */
+.postImageGallery img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 250px;
+  object-fit: contain;    
+  background-color: var(--background-color);
+}
+
+.postImageGallery img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Utility --- */
+.notFound {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+/* --- RESPONSIVE STYLES for Mobile --- */
+@media (max-width: 900px) {
+  .postLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .postMedia {
+    position: static;
+    margin-top: 3rem;
+  }
+
+  .postTitle {
+    font-size: 2rem;
+  }
+
+  .postHeading {
+    font-size: 1.5rem;
+  }
+}
