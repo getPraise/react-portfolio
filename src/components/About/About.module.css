@@ -118,6 +118,9 @@
   .title {
     text-align: center; /* Center the main "About Me" title */
   }
+  .journeyImage {
+  display: none;
+}
 
   .journeySection {
     flex-direction: column; /* Stacks the text and image */
