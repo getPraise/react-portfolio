@@ -45,9 +45,8 @@ const Hero = () => {
           <div className={styles.imageContainer}>
             {/* This div provides the background color and the circular shape */}
             <div className={styles.imageBackground}>
-              {/* Your transparent PNG image sits inside */}
               <img
-                src="/images/professional-photo.png" // Use your transparent, cropped photo
+                src="/images/professional-photo.jpg" // Use your transparent, cropped photo
                 alt="Priyanshu Singh"
                 className={styles.profileImage}
               />
