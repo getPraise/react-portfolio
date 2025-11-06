@@ -170,6 +170,13 @@ export const CERTIFICATES = [
     credentialId: "0d68ae16436d4edaa088eec51c43d961",
     imageUrl: "/images/certificate-1.png",
   },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issuer: "Oracle",
+    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A71CA9C999E274F429D6609C754DA1D17DAA798C18A4876FB74D1C015AFECB2",
+    credentialId: "323366586OCI25AICFA",
+    imageUrl: "/images/certificate-4.png",
+  },
 ];
 
 //CODING PROFILE :
