@@ -67,7 +67,7 @@ const About = ({ theme }) => {
             </p>
           </div>
           <img
-            src="/images/my-photo.jpg"
+            src="/images/Screenshot 2026-07-10 154824.png"
             alt="Priyanshu Singh"
             className={styles.journeyImage}
           />
