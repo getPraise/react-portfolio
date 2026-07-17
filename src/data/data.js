@@ -64,30 +64,30 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Complex UI Architecture (Razorpay Inspired)",
-    tags: ["Software Architecture", "React", "State Management"],
+    title: "HybridNODE: AI Orchestration Gateway",
+    tags: [["AI Orchestration", "Python", "FastAPI", "WebSockets"],
     shortDescription:
-      "An exercise in building a large-scale, component-driven application with complex state.",
+      "A high-performance AI orchestration gateway that dynamically routes workloads between high-speed open-weights models and high-reasoning cloud models.",
     longDescription:
-      "This project was an architectural challenge to build a complex, multi-faceted user interface. The focus was on componentization, managing intricate UI state, and ensuring a robust data flow through a large application, skills directly transferable to building front-ends for complex AI systems.",
+      "HybridNODE is an intelligent AI gateway designed to optimize the trade-off between cost and model reasoning. I architected and developed the core AI Engine, which utilizes semantic vector routing to classify prompt complexity in real-time. The engine intelligently delegates tasks—routing standard queries to high-speed open-weights models (via Groq API) and complex reasoning tasks to advanced cloud models (Google Gemini)—while maintaining a resilient fallback system to ensure zero-downtime performance.",
     images: [
-      "/images/p1i1.png",
-      "/images/p1i2.png",
-      "/images/p1i3.png",
-      "/images/p1i4.png",
-      "/images/p1i5.png",
-      "/images/p1i6.png",
+      "/images/p4i1.png",
+      "/images/p4i2.png",
+      "/images/p4i3.png",
+      "/images/p4i4.png",
+      "/images/p4i5.png",
+      "/images/p4i6.png",
     ],
     features: [
-      "Full-width navigation with dropdowns and auth buttons",
-      "Multiple hero sections and CTA blocks",
-      "Custom-built JavaScript slider with three modes",
-      "Enterprise-grade multi-column footer",
-      "Separate, functional Login and SignUp pages",
+     "Semantic Prompt Classification: Dynamic routing based on query complexity",
+     "Resilient Fallback System: Automatic rerouting between tiers during API rate limits or outages",
+     "Real-time Asynchronous Streaming: Token-by-token response delivery via WebSockets",
+     "Telemetry & Analytics: Real-time tracking of input/output token usage per model tier",
+     "Cross-Service Orchestration: Integrated pipeline across Vercel (Frontend), Render (Backend), and Python AI Engine",
     ],
-    techStack: ["React.js", "React Router", "CSS Modules", "JavaScript"],
-    liveUrl: "https://clone-web-application-8rsy.vercel.app/",
-    sourceUrl: "https://github.com/getPraise/clone-web-application",
+    techStack: ["Python", "FastAPI", "Socket.IO", "NumPy", "Google Gemini API", "Groq API"],
+    liveUrl: "https://hybrid-node-cloud.vercel.app/",
+    sourceUrl: "https://github.com/getPraise/HybridNODE_Cloud",
   },
   {
     id: 2,
@@ -118,6 +118,33 @@ export const PROJECTS = [
   },
   {
     id: 3,
+    title: "Complex UI Architecture (Razorpay Inspired)",
+    tags: ["Software Architecture", "React", "State Management"],
+    shortDescription:
+      "An exercise in building a large-scale, component-driven application with complex state.",
+    longDescription:
+      "This project was an architectural challenge to build a complex, multi-faceted user interface. The focus was on componentization, managing intricate UI state, and ensuring a robust data flow through a large application, skills directly transferable to building front-ends for complex AI systems.",
+    images: [
+      "/images/p1i1.png",
+      "/images/p1i2.png",
+      "/images/p1i3.png",
+      "/images/p1i4.png",
+      "/images/p1i5.png",
+      "/images/p1i6.png",
+    ],
+    features: [
+      "Full-width navigation with dropdowns and auth buttons",
+      "Multiple hero sections and CTA blocks",
+      "Custom-built JavaScript slider with three modes",
+      "Enterprise-grade multi-column footer",
+      "Separate, functional Login and SignUp pages",
+    ],
+    techStack: ["React.js", "React Router", "CSS Modules", "JavaScript"],
+    liveUrl: "https://clone-web-application-8rsy.vercel.app/",
+    sourceUrl: "https://github.com/getPraise/clone-web-application",
+  }
+  {
+    id: 4,
     title: "Foundational Responsive Design (StudySync Clone)",
     tags: ["Core Skills", "HTML", "CSS"],
     shortDescription:
