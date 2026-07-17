@@ -1,5 +1,4 @@
 // src/data/data.js
-// ... (keep other data above)
 
 export const SKILLS = [
   // --- AI & Machine Learning ---
@@ -20,11 +19,11 @@ export const SKILLS = [
   {
     name: "DSA in C++",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-  }, // Directly reflects your skill
+  },
   {
     name: "Object-Oriented Programming",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/diagramsdotnet.svg",
-  }, // Represents structure
+  },
   {
     name: "Database Management (SQL)",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -32,11 +31,11 @@ export const SKILLS = [
   {
     name: "Computer Networks",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/gnometerminal.svg",
-  }, // Represents networking/terminals
+  },
   {
     name: "Computer Architecture",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/intel.svg",
-  }, // Represents processors
+  },
 
   // --- Software Engineering Foundation ---
   {
@@ -60,12 +59,13 @@ export const SKILLS = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
 ];
-//PROJECT DETAILS :-
+
+// PROJECT DETAILS :-
 export const PROJECTS = [
   {
     id: 1,
     title: "HybridNODE: AI Orchestration Gateway",
-    tags: [["AI Orchestration", "Python", "FastAPI", "WebSockets"],
+    tags: ["AI Orchestration", "Python", "FastAPI", "WebSockets"],
     shortDescription:
       "A high-performance AI orchestration gateway that dynamically routes workloads between high-speed open-weights models and high-reasoning cloud models.",
     longDescription:
@@ -79,11 +79,11 @@ export const PROJECTS = [
       "/images/p4i6.png",
     ],
     features: [
-     "Semantic Prompt Classification: Dynamic routing based on query complexity",
-     "Resilient Fallback System: Automatic rerouting between tiers during API rate limits or outages",
-     "Real-time Asynchronous Streaming: Token-by-token response delivery via WebSockets",
-     "Telemetry & Analytics: Real-time tracking of input/output token usage per model tier",
-     "Cross-Service Orchestration: Integrated pipeline across Vercel (Frontend), Render (Backend), and Python AI Engine",
+      "Semantic Prompt Classification: Dynamic routing based on query complexity",
+      "Resilient Fallback System: Automatic rerouting between tiers during API rate limits or outages",
+      "Real-time Asynchronous Streaming: Token-by-token response delivery via WebSockets",
+      "Telemetry & Analytics: Real-time tracking of input/output token usage per model tier",
+      "Cross-Service Orchestration: Integrated pipeline across Vercel (Frontend), Render (Backend), and Python AI Engine",
     ],
     techStack: ["Python", "FastAPI", "Socket.IO", "NumPy", "Google Gemini API", "Groq API"],
     liveUrl: "https://hybrid-node-cloud.vercel.app/",
@@ -142,7 +142,7 @@ export const PROJECTS = [
     techStack: ["React.js", "React Router", "CSS Modules", "JavaScript"],
     liveUrl: "https://clone-web-application-8rsy.vercel.app/",
     sourceUrl: "https://github.com/getPraise/clone-web-application",
-  }
+  },
   {
     id: 4,
     title: "Foundational Responsive Design (StudySync Clone)",
@@ -151,7 +151,6 @@ export const PROJECTS = [
       "A project focused on mastering the foundational principles of semantic HTML and responsive CSS.",
     longDescription:
       "This project was a deep dive into the core fundamentals of web structure and styling. Built with only HTML and CSS, the focus was on creating a clean, semantic, and fully responsive layout, demonstrating a strong understanding of the foundational principles that underpin all application interfaces.",
-
     images: ["/images/p3i1.png", "/images/p3i2.png", "/images/p3i3.png"],
     features: [
       "Pixel-perfect replication of the original design",
@@ -164,10 +163,9 @@ export const PROJECTS = [
     liveUrl: "https://study-sync-clone-two.vercel.app/",
     sourceUrl: "https://github.com/getPraise/studySyncClone",
   },
-  // You can add more projects here for testing the filter
 ];
-//MY MARKS:
 
+// MY MARKS:
 export const ACADEMIC_DATA = [
   { semester: "Sem 1", gpa: 7.35 },
   { semester: "Sem 2", gpa: 6.89 },
@@ -207,32 +205,29 @@ export const CERTIFICATES = [
   },
 ];
 
-//CODING PROFILE :
-
+// CODING PROFILE :
 export const CODING_PROFILES = {
   leetcode: {
     link: "https://leetcode.com/u/priyanshuSingh44/",
     stats: [
-      { level: "Easy", count: 37, color: "#4ade80" }, // Green
-      { level: "Medium", count: 55, color: "#facc15" }, // Yellow
-      { level: "Hard", count: 9, color: "#f87171" }, // Red
+      { level: "Easy", count: 37, color: "#4ade80" },
+      { level: "Medium", count: 55, color: "#facc15" },
+      { level: "Hard", count: 9, color: "#f87171" },
     ],
   },
   gfg: {
     link: "https://www.geeksforgeeks.org/user/priyanshumdu/",
     stats: [
-      { level: "Basic", count: 10, color: "#60a5fa" }, // Blue
-      { level: "Easy", count: 29, color: "#4ade80" }, // Green
-      { level: "Medium", count: 47, color: "#facc15" }, // Yellow
-      { level: "Hard", count: 9, color: "#f87171" }, // Red
+      { level: "Basic", count: 10, color: "#60a5fa" },
+      { level: "Easy", count: 29, color: "#4ade80" },
+      { level: "Medium", count: 47, color: "#facc15" },
+      { level: "Hard", count: 9, color: "#f87171" },
     ],
   },
 };
 
-//BLOG :
-
+// BLOG :
 export const BLOG_POSTS = [
-  // --- POST 1 (August) ---
   {
     id: 1,
     title: "📌 AUGUST 2025 — Monthly Tech Progress Recap",
@@ -240,38 +235,28 @@ export const BLOG_POSTS = [
     content: [
       {
         type: "paragraph",
-        value:
-          "Sharing my monthly update to stay consistent and reflect on the journey. August was a month of significant change and learning, just not in the ways I expected. With the start of my 6th semester, this month was a true balancing act. Here’s how it went ⬇️",
+        value: "Sharing my monthly update to stay consistent and reflect on the journey. August was a month of significant change and learning, just not in the ways I expected. With the start of my 6th semester, this month was a true balancing act. Here’s how it went ⬇️",
       },
       { type: "heading", value: "🧠 The Daily Non-Negotiable: DSA Practice" },
       {
         type: "paragraph",
-        value:
-          "This month, I treated my daily DSA practice as the one non-negotiable in my routine. The real challenge wasn't a lack of time, but the mental discipline to stay consistent day in and day out. Crossing the 50 active days milestone is a testament to that persistence.",
+        value: "This month, I treated my daily DSA practice as the one non-negotiable in my routine. The real challenge wasn't a lack of time, but the mental discipline to stay consistent day in and day out. Crossing the 50 active days milestone is a testament to that persistence.",
       },
       { type: "heading", value: "💬 Reflection: Debugging the Routine" },
       {
         type: "paragraph",
-        value:
-          "This month was a powerful lesson in self-awareness. Juggling new coursework, personal time, and coding goals meant I had to honestly assess where my free time was going. While I didn't build a new project, the real progress was internal: making the conscious decision to re-prioritize my goals and build better habits.",
+        value: "This month was a powerful lesson in self-awareness. Juggling new coursework, personal time, and coding goals meant I had to honestly assess where my free time was going. While I didn't build a new project, the real progress was internal: making the conscious decision to re-prioritize my goals and build better habits.",
       },
       {
         type: "paragraph",
-        value:
-          "Every month teaches you something. August taught me that consistency is a choice you make long before you open your laptop. 🚀",
+        value: "Every month teaches you something. August taught me that consistency is a choice you make long before you open your laptop. 🚀",
       },
       {
         type: "image-gallery",
-        value: [
-          "/images/post/p1i1.jpeg",
-          "/images/post/p1i2.jpeg",
-          "/images/post/p1i3.jpeg",
-        ],
+        value: ["/images/post/p1i1.jpeg", "/images/post/p1i2.jpeg", "/images/post/p1i3.jpeg"],
       },
     ],
   },
-
-  // --- POST 2 (July) - NOW WITH STRUCTURE ---
   {
     id: 2,
     title: "📌 JULY 2025 — Monthly Tech Progress Recap",
@@ -279,84 +264,51 @@ export const BLOG_POSTS = [
     content: [
       {
         type: "paragraph",
-        value:
-          "As July wraps up, I’m starting a small habit: sharing what I worked on each month — to stay consistent, reflect, and hopefully connect with others on a similar path. Here’s how July went ⬇️",
+        value: "As July wraps up, I’m starting a small habit: sharing what I worked on each month — to stay consistent, reflect, and hopefully connect with others on a similar path. Here’s how July went ⬇️",
       },
       { type: "heading", value: "🧠 DSA Practice" },
       {
         type: "list",
-        value: [
-          "Platforms: GeeksforGeeks & LeetCode",
-          "Maintained a daily problem-solving streak throughout the month.",
-        ],
+        value: ["Platforms: GeeksforGeeks & LeetCode", "Maintained a daily problem-solving streak throughout the month."],
       },
       { type: "heading", value: "🎓 Certifications Earned" },
       {
         type: "paragraph",
-        value:
-          "📜 Python for Data Science (IBM)\nCompleted an IBM-certified course covering core Python, data structures, NumPy, and Pandas — all within a data science context.\n🛠 Tools: Python, NumPy, Pandas",
+        value: "📜 Python for Data Science (IBM)\nCompleted an IBM-certified course covering core Python, data structures, NumPy, and Pandas — all within a data science context.\n🛠 Tools: Python, NumPy, Pandas",
       },
       {
         type: "paragraph",
-        value:
-          "📜 Machine Learning with Python (IBM)\nCompleted an IBM course covering key ML concepts with hands-on labs and mini-projects.\n🛠 Tools: Python, scikit-learn, Pandas, Matplotlib",
+        value: "📜 Machine Learning with Python (IBM)\nCompleted an IBM course covering key ML concepts with hands-on labs and mini-projects.\n🛠 Tools: Python, scikit-learn, Pandas, Matplotlib",
       },
       { type: "heading", value: "🧪 Project: PasteBin Clone" },
       {
         type: "list",
-        value: [
-          "Create, update, delete, and share notes",
-          "Toaster notifications for user feedback",
-          "Persistent data storage using browser’s local storage",
-        ],
+        value: ["Create, update, delete, and share notes", "Toaster notifications for user feedback", "Persistent data storage using browser’s local storage"],
       },
       {
         type: "image-gallery",
-        value: [
-          "/images/post/p2i1.jpeg",
-          "/images/post/p2i2.jpeg",
-          "/images/post/p2i3.jpeg",
-          "/images/post/p2i4.jpeg",
-          "/images/post/p2i5.jpeg",
-          "/images/post/p2i6.jpeg",
-        ],
+        value: ["/images/post/p2i1.jpeg", "/images/post/p2i2.jpeg", "/images/post/p2i3.jpeg", "/images/post/p2i4.jpeg", "/images/post/p2i5.jpeg", "/images/post/p2i6.jpeg"],
       },
     ],
   },
-
-  // --- Posts 3 and 4 WITH STRUCTURE ---
   {
     id: 3,
     title: "✅ Razorpay-Inspired Project",
     date: "June 5, 2025",
     content: [
-      {
-        type: "heading",
-        value: "🚀 Project Showcase: Razorpay-Inspired Fintech Web UI",
-      },
+      { type: "heading", value: "🚀 Project Showcase: Razorpay-Inspired Fintech Web UI" },
       {
         type: "paragraph",
-        value:
-          "I'm excited to share my latest project — a fully responsive UI built using React.js with no backend integration!",
+        value: "I'm excited to share my latest project — a fully responsive UI built using React.js with no backend integration!",
       },
       {
         type: "list",
-        value: [
-          "Inspired by real-world fintech UI",
-          "Fully responsive design (mobile + desktop)",
-          "Includes login & signup forms with email validation",
-          "Custom slider built using vanilla JS (no libraries!)",
-        ],
+        value: ["Inspired by real-world fintech UI", "Fully responsive design (mobile + desktop)", "Includes login & signup forms with email validation", "Custom slider built using vanilla JS (no libraries!)"],
       },
       { type: "heading", value: "🛠 Tech Stack" },
       {
         type: "list",
-        value: [
-          "React.js",
-          "CSS Modules",
-          "React Router",
-          "Vanilla JavaScript",
-        ],
+        value: ["React.js", "CSS Modules", "React Router", "Vanilla JavaScript"],
       },
       { type: "video", value: "/videos/razorpay-demo.mp4" },
     ],
@@ -368,17 +320,11 @@ export const BLOG_POSTS = [
     content: [
       {
         type: "paragraph",
-        value:
-          "I'm excited to share a fully responsive clone of the StudySync website, built using only HTML and CSS — no JavaScript!",
+        value: "I'm excited to share a fully responsive clone of the StudySync website, built using only HTML and CSS — no JavaScript!",
       },
       {
         type: "list",
-        value: [
-          "Clean semantic structure",
-          "Mobile-first responsive design",
-          "Inspired by Love Babbar's web dev playlist",
-          "Learned a lot about layout, flexbox, and media queries",
-        ],
+        value: ["Clean semantic structure", "Mobile-first responsive design", "Inspired by Love Babbar's web dev playlist", "Learned a lot about layout, flexbox, and media queries"],
       },
       { type: "heading", value: "🔧 Tech Stack" },
       { type: "list", value: ["HTML5", "CSS3 (Flexbox, Grid, Media Queries)"] },
