@@ -65,7 +65,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "HybridNODE: AI Orchestration Gateway",
-    tags: ["AI Orchestration", "Python", "FastAPI", "WebSockets"],
+    tags: ["AI Orchestration", "React"],
     shortDescription:
       "Smart AI routing engine that balances performance and reasoning across model tiers.",
     longDescription:
@@ -119,7 +119,7 @@ export const PROJECTS = [
   {
     id: 3,
     title: "Complex UI Architecture (Razorpay Inspired)",
-    tags: ["Software Architecture", "React", "State Management"],
+    tags: ["React", "State Management"],
     shortDescription:
       "An exercise in building a large-scale, component-driven application with complex state.",
     longDescription:
@@ -146,7 +146,7 @@ export const PROJECTS = [
   {
     id: 4,
     title: "Foundational Responsive Design (StudySync Clone)",
-    tags: ["Core Skills", "HTML", "CSS"],
+    tags: ["HTML & CSS"],
     shortDescription:
       "A project focused on mastering the foundational principles of semantic HTML and responsive CSS.",
     longDescription:
