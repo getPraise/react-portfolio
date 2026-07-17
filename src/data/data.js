@@ -67,7 +67,7 @@ export const PROJECTS = [
     title: "HybridNODE: AI Orchestration Gateway",
     tags: ["AI Orchestration", "Python", "FastAPI", "WebSockets"],
     shortDescription:
-      "A high-performance AI orchestration gateway that dynamically routes workloads between high-speed open-weights models and high-reasoning cloud models.",
+      "Smart AI routing engine that balances performance and reasoning across model tiers.",
     longDescription:
       "HybridNODE is an intelligent AI gateway designed to optimize the trade-off between cost and model reasoning. I architected and developed the core AI Engine, which utilizes semantic vector routing to classify prompt complexity in real-time. The engine intelligently delegates tasks—routing standard queries to high-speed open-weights models (via Groq API) and complex reasoning tasks to advanced cloud models (Google Gemini)—while maintaining a resilient fallback system to ensure zero-downtime performance.",
     images: [
