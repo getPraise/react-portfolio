@@ -172,6 +172,7 @@ export const ACADEMIC_DATA = [
   { semester: "Sem 3", gpa: 8.19 },
   { semester: "Sem 4", gpa: 8.56 },
   { semester: "Sem 5", gpa: 8.07 },
+  { semester: "Sem 6", gpa: 8.65 },
 ];
 
 export const CERTIFICATES = [
