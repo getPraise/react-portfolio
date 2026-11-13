@@ -167,12 +167,12 @@ export const PROJECTS = [
 
 // MY MARKS:
 export const ACADEMIC_DATA = [
-  { semester: "Sem 1", gpa: 7.35 },
-  { semester: "Sem 2", gpa: 6.89 },
-  { semester: "Sem 3", gpa: 8.19 },
-  { semester: "Sem 4", gpa: 8.56 },
-  { semester: "Sem 5", gpa: 8.07 },
-  { semester: "Sem 6", gpa: 8.65 },
+  { semester: "Sem 1", percentage: 69.83 },
+  { semester: "Sem 2", percentage: 65.50 },
+  { semester: "Sem 3", percentage: 77.88 },
+  { semester: "Sem 4", percentage: 81.37 },
+  { semester: "Sem 5", percentage: 76.71 },
+  { semester: "Sem 6", percentage: 82.23 },
 ];
 
 export const CERTIFICATES = [
